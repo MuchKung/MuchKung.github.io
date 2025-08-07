@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Much Songsee - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header .position {
+            font-size: 1.5rem;
+            color: #3498db;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .header .tagline {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Content Sections */
+        .section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #2c3e50;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .section p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            text-align: justify;
+            color: #34495e;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .skill-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .skill-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .skill-card p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* Goals Section */
+        .goals {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .goals h2 {
+            color: white;
+            border-bottom-color: white;
+        }
+
+        .goals p {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .header .position {
+                font-size: 1.2rem;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+            
+            .section h2 {
+                font-size: 1.5rem;
+            }
+            
+            .section p {
+                font-size: 1rem;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .section {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        .section:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .section:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        .section:nth-child(4) {
+            animation-delay: 0.6s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1>Much Songsee</h1>
+            <div class="position">Cyber Security</div>
+            <p class="tagline">ผู้ที่หลงใหลในเทคโนโลยีและความปลอดภัยไซเบอร์ พร้อมที่จะเรียนรู้และเติบโตในโลกแห่งความปลอดภัยดิจิทัล</p>
+        </header>
+
+        <!-- Background Section -->
+        <section class="section">
+            <h2>ภูมิหลังและแรงบันดาลใจ</h2>
+            <p>ตั้งแต่ผมจำความได้ ผมชอบเทคโนโลยีมาตลอด ไม่ว่าจะเป็นคอมพิวเตอร์ โทรศัพท์ หรืออินเทอร์เน็ต ผมชอบแกะ ชอบลอง และมักจะเป็นคนที่เพื่อนๆ มาขอความช่วยเหลือเวลาเครื่องมีปัญหา</p>
+            <p>ช่วงมัธยมปลาย ผมเริ่มรู้จักเรื่อง "Cybersecurity" จากคลิปในยูทูบ ซึ่งพูดถึงเรื่องการแฮ็ก การป้องกันข้อมูล และภัยไซเบอร์ต่างๆ ทำให้ผมรู้สึกตื่นเต้นมาก และเริ่มสงสัยว่า เบื้องหลังของความปลอดภัยในโลกออนไลน์มันทำงานยังไง</p>
+            <p>ผมคิดว่าโลกสมัยนี้พึ่งพาอินเทอร์เน็ตแทบทุกอย่าง ตั้งแต่การสื่อสาร ธุรกรรมการเงิน ไปจนถึงชีวิตประจำวัน ถ้าระบบพวกนี้โดนเจาะหรือมีปัญหา ข้อมูลสำคัญของผู้คนอาจหลุดได้ ผมจึงอยากเป็นหนึ่งในคนที่ช่วยป้องกันไม่ให้สิ่งเหล่านี้เกิดขึ้น</p>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section class="section">
+            <h2>มุมมองและปรัชญา</h2>
+            <p>ผมมองว่า Cybersecurity ไม่ใช่แค่การเขียนโค้ดหรือเทคนิคเพียงอย่างเดียว แต่มันคือการเข้าใจธรรมชาติของผู้คน เข้าใจระบบ และคิดรอบด้านเพื่อสร้างความปลอดภัยที่มั่นคง</p>
+            <p>ถึงผมจะยังไม่มีประสบการณ์มาก แต่ผมพร้อมจะเรียนรู้ ผมเริ่มศึกษาพื้นฐานพวก network, ความเข้าใจเบื้องต้นเกี่ยวกับระบบปฏิบัติการ และกำลังฝึกเขียนโค้ดบ้างจากภาษา Python กับ C ซึ่งทำให้ผมเข้าใจการทำงานของโปรแกรมมากขึ้น</p>
+        </section>
+
+        <!-- Skills and Experience Section -->
+        <section class="section">
+            <h2>ทักษะและประสบการณ์</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>การเขียนโปรแกรม</h3>
+                    <p>กำลังเรียนรู้ Python และ C เพื่อเข้าใจพื้นฐานการทำงานของโปรแกรม</p>
+                </div>
+                <div class="skill-card">
+                    <h3>ระบบเครือข่าย</h3>
+                    <p>ศึกษาพื้นฐานเกี่ยวกับ network และระบบปฏิบัติการ</p>
+                </div>
+                <div class="skill-card">
+                    <h3>การแก้ปัญหา</h3>
+                    <p>มีประสบการณ์ช่วยเพื่อนแก้ปัญหาคอมพิวเตอร์และอุปกรณ์ต่างๆ</p>
+                </div>
+                <div class="skill-card">
+                    <h3>การทำงานเป็นทีม</h3>
+                    <p>เคยร่วมจัดงานกิจกรรมของโรงเรียนและทำงานร่วมกับผู้อื่น</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Goals Section -->
+        <section class="section goals">
+            <h2>เป้าหมายและความฝัน</h2>
+            <p>เป้าหมายของผมคือ อยากเข้าเรียนต่อในสาขา Cybersecurity เพราะเชื่อว่าการเรียนที่นี่จะเปิดโอกาสให้ผมได้เข้าใจทั้งภาคทฤษฎีและปฏิบัติ ได้ร่วมมือกับคนที่สนใจเหมือนกัน และสุดท้ายผมอยากเติบโตเป็นผู้เชี่ยวชาญที่สามารถช่วยปกป้องข้อมูลของคนอื่นได้อย่างจริงจัง</p>
+            <p>ผมเชื่อว่า ถ้าผมได้โอกาสเข้าเรียนในสาขานี้ ผมจะตั้งใจเรียนอย่างเต็มที่ และใช้ความรู้ที่ได้มาเพื่อทำประโยชน์ให้กับสังคมในอนาคตครับ</p>
+        </section>
+    </div>
+</body>
+</html>
